@@ -1,0 +1,209 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Hina Mincho;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* -------------------------header-part----------------------------- */
+header {
+    background-color: #FBFBFB;
+}
+
+header .container {
+    justify-content: space-between;
+    height: 100px;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo img {
+    width: 200px;
+}
+
+.header-nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    list-style: none;
+}
+
+header .mobile-menu {
+    display: none;
+    width: 35px;
+    height: 30px;
+    border-block: 2px solid black;
+    position: relative;
+}
+
+header .mobile-menu:hover {
+    cursor: pointer;
+}
+
+header .mobile-menu::after{
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Mobile Menu Styles */
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    right: -768px;
+    width: 768px;
+    height: 100vh;
+    background-color: #FBFBFB;
+    z-index: 1000;
+    transition: right 0.3s ease-in-out;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu-overlay.active {
+    right: 0;
+}
+
+.mobile-menu-content {
+    padding: 30px 40px 40px;
+    height: 100%;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.mobile-nav li {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+}
+
+.mobile-nav a {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    transition: color 0.2s ease;
+}
+
+.mobile-nav a:hover {
+    color: #666;
+}
+
+/* Mobile Menu Header */
+.mobile-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #FBFBFB;
+}
+
+.menu-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: black;
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease;
+}
+
+.close-btn p {
+    padding-bottom: 8px;
+}
+
+.close-btn:hover {
+    color: #666;
+}
+
+
+@media (max-width:1440px) {
+    header .container {
+        padding-inline: 20px;
+    }
+}
+
+@media (max-width:1200px) {
+    .header-nav ul {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:1100px) {
+    .header-nav li {
+        display: none;
+    }
+    header .mobile-menu {
+        display: block;
+    }
+}
+
+@media (max-width : 768px) {
+    header .container {
+        height: 70px;
+    }
+    .header-logo img {
+        width: 150px;
+    }
+    header .mobile-menu {
+        width: 25px;
+        height: 20px;
+    }
+    
+    .mobile-menu-overlay {
+        width: 100vw;
+        right: -100vw;
+    }
+    
+    .mobile-menu-overlay.active {
+        right: 0;
+    }
+}
+
