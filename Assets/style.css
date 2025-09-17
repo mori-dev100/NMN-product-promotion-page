@@ -207,3 +207,19 @@ header .mobile-menu::after{
     }
 }
 
+/* ------------------------------------ hero-section ------------------------------------ */
+.hero-section {
+    height: 85vh;
+}
+
+.hero-section .container {
+    height: 100%;
+}
+
+.hero-content {
+    width: 100%;
+    height: 90%;
+    background-image: url(./Images/hero-background.png);
+    background-size: cover;
+}
+
