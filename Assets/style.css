@@ -209,7 +209,7 @@ header .mobile-menu::after{
 
 /* ------------------------------------ hero-section ------------------------------------ */
 .hero-section {
-    height: 85vh;
+    height: 75vh;
 }
 
 .hero-section .container {
@@ -219,7 +219,205 @@ header .mobile-menu::after{
 .hero-content {
     width: 100%;
     height: 90%;
+    position: relative;
     background-image: url(./Images/hero-background.png);
     background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.hero-content .nmn-bioteru {
+    position: absolute;
+    width: 420px;
+    height: auto;
+    bottom: -5px;
+    left: 36px;
+}
+
+.hero-content .miyaura {
+    position: absolute;
+    right: -130px;
+    bottom: -5px;
+    width: 690px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content-text {
+    font-size: 32px;
+    text-align: center;
+    padding-left: 300px;
+    line-height: 70px;
+    word-spacing: 30px;
+    letter-spacing: 8px;
+    z-index: 1;
+}
+
+.water-cup {
+    position: absolute;
+    width: 240px;
+    bottom: -5px;
+    left: 420px;
+    opacity: 0.85;
+}
+
+/* Hero-section_responsive */
+@media (max-width : 1800px) {
+    .hero-content .miyaura {
+        width: 600px;
+    }
+    .hero-content-text {
+        padding-left: 320px;
+    }
+}
+
+@media (max-width:1320px) {
+    .hero-content-text {
+        padding-left: 280px;
+    }
+    .hero-content .water-cup {
+        width: 200px;
+        left: 350px;
+    }
+
+    .hero-content .nmn-bioteru {
+        width: 350px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .hero-content-text {
+        font-size: 28px;
+        letter-spacing: 5px;
+    }
+}
+
+@media (max-width : 1100px) {
+    .hero-content-text {
+        padding-left: 50px;
+    }
+
+    .hero-content .miyaura {
+        right: -50px;
+    }
+}
+
+@media (max-width : 1000px) {
+    .hero-content {
+        background-image: url(./Images/hero-background-mb.png);
+        background-position: center top;
+    }
+
+    .hero-section {
+        height: 85vh;
+    }
+
+    .hero-content {
+        height: 100%;
+        align-items: flex-start;
+        padding-top: 50px;
+    }
+
+    .hero-content .miyaura {
+        width: 530px;
+    }
+}
+
+@media (max-width : 850px) {
+    .hero-content .water-cup {
+        left: 260px;
+    }
+}
+
+@media (max-width : 720px) {
+    .hero-content .nmn-bioteru {
+        width: 320px;
+    }
+
+    .hero-content .water-cup {
+        width: 200px;
+        left: 240px;
+        bottom: -30px;
+    }
+}
+
+@media (max-width: 650px) {
+    .hero-content .water-cup {
+        display: none;
+    }
+}
+
+@media (max-width : 580px) {
+    .hero-content .miyaura {
+        width: 500px;
+        right: -100px;
+    }
+
+    .hero-content .nmn-bioteru {
+        width: 280px;
+        left: 30px;
+    }
+
+    .hero-section {
+        height: 70vh;
+    }
+
+    .hero-content-text {
+        font-size: 20px;
+        line-height: 40px;
+        padding-left: 0;
+        padding-top: 0px;
+    }
+}
+
+@media (max-width : 450px) {
+    .hero-content .miyaura {
+        width: 490px;
+        right: -130px;
+    }
+
+    .hero-content .nmn-bioteru {
+        width: 260px;
+        left: 30px;
+    }
+
+    .hero-section {
+        height: 70vh;
+    }
+
+    .hero-content-text {
+        font-size: 20px;
+        line-height: 40px;
+        padding-left: 0;
+        padding-top: 0px;
+    }
+}
+
+@media (max-width : 375px) {
+    .hero-content .miyaura {
+        width: 480px;
+        right: -130px;
+    }
+
+    .hero-content .nmn-bioteru {
+        width: 230px;
+        left: 10px;
+    }
+
+    .hero-section {
+        height: 70vh;
+    }
+
+    .hero-content-text {
+        font-size: 20px;
+        line-height: 40px;
+        padding-left: 0;
+        padding-top: 0px;
+    }
 }
 
