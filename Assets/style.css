@@ -24,6 +24,14 @@ a {
     color: black;
 }
 
+.br {
+    display: none;
+}
+
+.show {
+    display: inline;
+}
+
 /* -------------------------header-part----------------------------- */
 header {
     background-color: #FBFBFB;
@@ -233,6 +241,7 @@ header .mobile-menu::after{
     height: auto;
     bottom: -5px;
     left: 36px;
+    transition: all .3s;
 }
 
 .hero-content .miyaura {
@@ -240,6 +249,7 @@ header .mobile-menu::after{
     right: -130px;
     bottom: -5px;
     width: 690px;
+    transition: all .3s;
 }
 
 .hero-content {
@@ -256,6 +266,7 @@ header .mobile-menu::after{
     word-spacing: 30px;
     letter-spacing: 8px;
     z-index: 1;
+    transition: all .3s;
 }
 
 .water-cup {
@@ -264,9 +275,11 @@ header .mobile-menu::after{
     bottom: -5px;
     left: 420px;
     opacity: 0.85;
+    transition: all .3s;
 }
 
 /* Hero-section_responsive */
+
 @media (max-width : 1800px) {
     .hero-content .miyaura {
         width: 600px;
@@ -383,7 +396,7 @@ header .mobile-menu::after{
 
     .hero-content .nmn-bioteru {
         width: 260px;
-        left: 30px;
+        left: 10px;
     }
 
     .hero-section {
@@ -420,4 +433,155 @@ header .mobile-menu::after{
         padding-top: 0px;
     }
 }
+
+/* ---------------------------------Miyaura-section------------------------------- */
+.miyaura-section {
+    padding-block: 30px;
+}
+
+
+.miyaura-gallery img {
+    width: 355px;
+    height: 240px;
+}
+
+.miyaura-gallery {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;       /* full width */
+  }
+  
+  .gallery-track {
+    display: flex;
+    animation: scroll 30s linear infinite;  /* adjust 30s for speed */
+  }
+  
+  .gallery-track img {
+    width: 335px;      /* ✅ fixed width per image */
+    height: auto;
+    margin-right: 20px; /* spacing between images */
+  }
+  
+  /* Keyframes for smooth loop */
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+.miyaura-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.miyaura-photo {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.miyaura-photo img {
+    padding-block: 35px;
+    width: 70%;
+    height: auto;
+}
+
+.miyaura-des {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.miyaura-title {
+    text-align: center;
+    font-size: 40px;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.miyaura-para {
+    font-size: 20px;
+    line-height: 45px;
+    width: 80%;
+}
+
+/* miyaura-section_responsive */
+
+@media (max-width:1400px) {
+    .miyaura-para {
+        font-size: 16px;
+    }
+    .miyaura-title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width:1120px) {
+    .miyaura-para {
+       line-height: 35px;
+    }
+    .miyaura-title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width : 980px) {
+    .miyaura-para {
+        line-height: 25px;
+     }
+     .miyaura-title {
+         font-size: 28px;
+     }
+}
+
+@media (max-width:515px) {
+    .br {
+        display: block;
+    }
+    
+    .show { 
+        display: none;
+    }
+    .miyaura-title{
+        font-size: 24px;
+        line-height: 45px;
+    } 
+}
+
+@media (max-width:845px) {
+    .miyaura-content {
+        flex-direction: column;
+    }
+
+    .miyaura-photo {
+        width: 100%;
+    }
+
+    .miyaura-des {
+        width: 100%;
+    }
+
+    .miyaura-photo img {
+        width: 100%;
+    }
+
+    .miyaura-para {
+        width: 100%;
+        padding-inline: 20px;
+    }
+
+    .miyaura-title {
+        width: 100%;
+        padding-inline: 20px;
+    }
+}
+  
 

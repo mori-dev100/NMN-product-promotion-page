@@ -1,16 +1,11 @@
 ﻿document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
-    const closeBtn = document.getElementById('close-btn');
+    const closebtn = document.getElementById('close-btn');
     
     // Toggle mobile menu
     mobileMenuBtn.addEventListener('click', function() {
         mobileMenuOverlay.classList.toggle('active');
-    });
-    
-    // Close mobile menu with close button
-    closeBtn.addEventListener('click', function() {
-        mobileMenuOverlay.classList.remove('active');
     });
     
     // Close mobile menu when clicking outside
@@ -27,4 +22,10 @@
             mobileMenuOverlay.classList.remove('active');
         });
     });
+
+    closebtn.addEventListener('click', function(){
+        mobileMenuOverlay.classList.remove('active');
+    })
 });
+
+
