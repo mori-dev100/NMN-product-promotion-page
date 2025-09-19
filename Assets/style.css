@@ -37,6 +37,11 @@ a {
     display: inline;
 }
 
+.mg-0 {
+    margin-block: 0 !important;
+    border: none !important;
+}
+
 /* -------------------------header-part----------------------------- */
 header {
     background-color: #FBFBFB;
@@ -222,7 +227,7 @@ header .mobile-menu::after{
 
 /* ------------------------------------ hero-section ------------------------------------ */
 .hero-section {
-    height: 65vh;
+    height: 50vh;
     margin-top: 30px;
 }
 
@@ -243,18 +248,18 @@ header .mobile-menu::after{
 
 .hero-content .nmn-bioteru {
     position: absolute;
-    width: 310px;
+    width: 220px;
     height: auto;
     bottom: -5px;
-    left: 36px;
+    left: 50px;
     transition: all .3s;
 }
 
 .hero-content .miyaura {
     position: absolute;
-    right: -130px;
+    right: -100px;
     bottom: -5px;
-    width: 580px;
+    width: 470px;
     transition: all .3s;
 }
 
@@ -276,9 +281,9 @@ header .mobile-menu::after{
 
 .water-cup {
     position: absolute;
-    width: 240px;
+    width: 150px;
     bottom: -5px;
-    left: 300px;
+    left: 350px;
     opacity: 0.85;
     transition: all .3s;
 }
@@ -300,6 +305,10 @@ header .mobile-menu::after{
     .hero-content .miyaura {
         right: -50px;
     }
+
+    .hero-content .water-cup {
+        left: 270px;
+    }
 }
 
 @media (max-width : 1000px) {
@@ -318,8 +327,17 @@ header .mobile-menu::after{
         padding-top: 50px;
     }
 
+    .hero-content .water-cup {
+        width: 200px;
+        left: 320px;
+        bottom: -30px;
+    }
+
     .hero-content .miyaura {
         width: 530px;
+    }
+    .hero-content .nmn-bioteru {
+        width: 320px;
     }
 }
 
@@ -330,9 +348,6 @@ header .mobile-menu::after{
 }
 
 @media (max-width : 720px) {
-    .hero-content .nmn-bioteru {
-        width: 320px;
-    }
 
     .hero-content .water-cup {
         width: 200px;
@@ -424,7 +439,7 @@ header .mobile-menu::after{
 
 .miyaura-section .container {
     border-bottom: 1px solid rgb(185, 160, 157);
-    margin-top: 50px;
+    padding-bottom: 30px;
 }
 
 .miyaura-gallery {
@@ -436,7 +451,7 @@ header .mobile-menu::after{
   
   .gallery-track {
     display: flex;
-    animation: scroll 75s linear infinite; /* adjust duration for speed */
+    animation: scroll 60s linear infinite; /* adjust duration for speed */
   }
   
   .gallery-track img {
@@ -497,16 +512,9 @@ header .mobile-menu::after{
 
 /* miyaura-section_responsive */
 
-@media (max-width:1400px) {
+@media (max-width : 1200px) {
     .miyaura-section .container {
         width: 90%;
-        padding-bottom: 50px;
-    }
-    .miyaura-para {
-        font-size: 16px;
-    }
-    .miyaura-title {
-        font-size: 32px;
     }
 }
 
