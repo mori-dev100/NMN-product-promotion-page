@@ -739,6 +739,7 @@ header .mobile-menu::after{
     }
 
     .supplements-title {
+        text-align: center;
         font-size: 28px;
     }
     .supplements-image {
