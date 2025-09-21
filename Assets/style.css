@@ -235,7 +235,7 @@ header .mobile-menu::after{
     width: 100%;
     height: 90%;
     position: relative;
-    background-image: url(./Images/hero-background.png);
+    background-image: url(./Images/webp/hero-background.webp);
     background-size: cover;
     background-position: top left;
     background-repeat: no-repeat;
@@ -309,7 +309,7 @@ header .mobile-menu::after{
 
 @media (max-width : 1000px) {
     .hero-content {
-        background-image: url(./Images/hero-background-mb.png);
+        background-image: url(./Images/webp/hero-background-mb.webp);
         background-position: center top;
     }
 
@@ -872,7 +872,7 @@ header .mobile-menu::after{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./Images/buy-bg.jpg);
+    background-image: url(./Images/webp/buy-bg.webp);
 }
 
 .buy-image img {
@@ -1205,7 +1205,7 @@ header .mobile-menu::after{
 }
 
 .doctor-content {
-    background-image: url(./Images/doctor-introduction-pc.png);
+    background-image: url(./Images/webp/doctor-introduction-pc.webp);
     background-position: right bottom;
     background-size: cover;
     height: 430px;
