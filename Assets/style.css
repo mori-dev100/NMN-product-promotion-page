@@ -444,6 +444,8 @@ header .mobile-menu::after{
     padding-bottom: 30px;
 }
 
+
+
 .miyaura-gallery {
     display: flex;
     overflow: hidden;
@@ -816,11 +818,10 @@ header .mobile-menu::after{
     top: 50%;
     transform: translate(-50%, -50%);
     font-size: 28px;
-    color: rgb(255, 255, 255);
+    color: rgb(156, 16, 16);
     text-align: center;
     line-height: 50px;
-    text-shadow: 2px 2px 5px rgba(0,0,0);
-
+    font-weight: bold;
 }
 
 /* production-section-responsive */
