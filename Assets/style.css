@@ -20,10 +20,6 @@ img {
     align-items: center;
 }
 
-body {
-    /* background-color: #f6f4ef; */
-}
-
 a {
     text-decoration: none;
     color: black;
@@ -647,7 +643,7 @@ header .mobile-menu::after{
         font-size: 14px;
     }
 
-    .nmn-title {
+    .production-text h2 {
         font-size: 28px;
     }
     .nmn-image {
@@ -812,6 +808,10 @@ header .mobile-menu::after{
 
     .production-text p{
         width: 95%;
+    }
+
+    .production-text h2 {
+        font-size: 28px;
     }
 }
 
@@ -1005,6 +1005,11 @@ header .mobile-menu::after{
 
 /* -----------------------------lgc-section----------------------- */
 
+.lgc-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .lgc-section .container {
     flex-direction: column;
 }
@@ -1018,11 +1023,18 @@ header .mobile-menu::after{
 }
 
 .lgc-image {
-    width: 40%;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.lgc-image img {
+    width: 85%;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);;
 }
 
 .lgc-para {
-    width: 60%;
+    width: 65%;
 }
 
 .lgc-title  h2{
@@ -1040,4 +1052,196 @@ header .mobile-menu::after{
     font-size: 16px;
     letter-spacing: 3px;
     line-height: 200%;
+}
+
+.lgc-image-mb {
+    display: none;
+}
+
+/* lgc-sction_responsive */
+
+@media (max-width : 1200px) {
+    .lgc-section .container {
+        width: 90%;
+    }
+}
+
+@media (max-width : 850px) {
+    .lgc-content {
+        flex-direction: column;
+    }
+
+    .lgc-section .container {
+        width: 100%;
+    }
+
+    .lgc-image {
+        display: none;
+    }
+
+    .lgc-image-mb {
+        display: block;
+    }
+    .lgc-para {
+        width: 95%;
+    }
+
+    .lgc-title {
+        text-align: center;
+    }
+
+    .lgc-subtitle {
+        text-align: center;
+    }
+    .lgc-section {
+        padding-top: 0;
+    }
+}
+
+@media (max-width : 450px) {
+    .lgc-title .br {
+        display: block;
+    }
+
+    .lgc-title {
+        line-height: 50px;
+    }
+}
+
+/*------------------------------------------- okiniwa-section -----------------------------*/
+
+.okiniwa-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.okiniwa-section {
+    padding-block: 50px;
+}
+
+.okiniwa-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+    overflow: hidden;
+    gap: 50px;
+}
+
+.okiniwa-image-left, .okiniwa-image-right {
+    width: 50%;
+}
+
+.okiniwa-title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.okiniwa-des {
+    padding-top: 30px;
+    text-align: center;
+    line-height: 200%;
+}
+
+/* okiniwa-section_responsive */
+
+@media (max-width : 1200px) {
+    .okiniwa-section .container {
+        width: 90%;
+    }    
+}
+
+@media (max-width : 1046px) {
+    .okiniwa-image {
+        height: 250px;
+    }
+}
+
+@media (max-width : 850px) {
+    .okiniwa-section {
+        padding-top: 0;
+    }
+
+    .okiniwa-section  .container {
+        width: 95%;
+    }
+
+    .okiniwa-image {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .okiniwa-image {
+        height: auto;
+    }
+
+    .okiniwa-image-left, .okiniwa-image-right {
+        width: 100%;
+    }
+
+    .okiniwa-title .br {
+        display: block;
+    }
+
+    .okiniwa-title {
+        line-height: 50px;
+    }
+}
+
+@media (max-width :450px) {
+    .okiniwa-title {
+        font-size: 24px;
+    }
+}
+
+/* -----------------------------------doctor-section------------------------- */
+
+.doctor-section {
+    padding-block: 50px;
+}
+
+.doctor-content {
+    background-image: url(./Images/doctor-introduction-pc.png);
+    background-position: right bottom;
+    background-size: cover;
+    height: 430px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.doctor-content-detail {
+    width: 80%;
+    padding-left: 50px;
+}
+
+.doctor-title {
+    font-size: 32px;
+    padding-bottom: 10px;
+    text-align: center;
+    line-height: 150%;
+}
+
+.doctor-title span {
+    font-size: 34px;
+    font-weight: bold;
+    color: red;
+}
+
+.doctor-subtitle {
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    line-height: 170%;
+}
+
+.doctor-para {
+    font-size: 16px;
+    line-height: 200%;
+    text-align: center;
 }
