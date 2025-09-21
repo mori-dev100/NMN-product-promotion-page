@@ -268,7 +268,7 @@ header .mobile-menu::after{
 .hero-content-text {
     font-size: 32px;
     text-align: center;
-    padding-left: 220px;
+    padding-left: 150px;
     line-height: 60px;
     letter-spacing: 5px;
     z-index: 1;
@@ -279,7 +279,7 @@ header .mobile-menu::after{
     position: absolute;
     width: 150px;
     bottom: -5px;
-    left: 350px;
+    left: 300px;
     opacity: 0.85;
     transition: all .3s;
 }
