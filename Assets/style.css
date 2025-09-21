@@ -632,6 +632,8 @@ header .mobile-menu::after{
     .nmn-section .container {
         flex-direction: column;
         gap: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
     
     .nmn-des{
@@ -723,6 +725,7 @@ header .mobile-menu::after{
     .supplements-section .container {
         flex-direction: column;
         gap: 10px;
+        padding-block: 30px;
     }
     
     .supplements-des{
@@ -1165,6 +1168,7 @@ header .mobile-menu::after{
 @media (max-width : 850px) {
     .okiniwa-section {
         padding-top: 0;
+        padding-bottom: 30px;
     }
 
     .okiniwa-section  .container {
@@ -1307,6 +1311,7 @@ header .mobile-menu::after{
 
     .doctor-section {
         padding-top: 0px;
+        padding-bottom: 30px;
     }
     .doctor-content {
         background-image: none;
@@ -1329,6 +1334,7 @@ header .mobile-menu::after{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-bottom: 15px;
     }
 }
 
