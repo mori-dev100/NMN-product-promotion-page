@@ -440,7 +440,6 @@ header .mobile-menu::after{
 }
 
 .miyaura-section .container {
-    border-bottom: 1px solid rgb(255, 0, 119);
     padding-bottom: 30px;
 }
 
@@ -578,11 +577,14 @@ header .mobile-menu::after{
   
 /* ------------------------------------nmn-section---------------------------- */
 
+.nmn-section {
+    background-color: white;
+}
+
 .nmn-section .container {
     padding-top: 50px;
     padding-bottom: 50px;
     gap: 50px;
-    border-bottom: 1px solid rgb(0, 119, 255);
 }
 
 .nmn-des {
@@ -595,7 +597,7 @@ header .mobile-menu::after{
     position: relative;
 }
 
-.nmn-image::after {
+/* .nmn-image::after {
     position: absolute;
     content: '';
     width: 3px;
@@ -604,7 +606,7 @@ header .mobile-menu::after{
     left: 0;
     z-index: 1;
     background-color: rgb(255, 0, 119);
-}
+} */
 
 .nmn-title {
     font-size: 32px;
@@ -1237,6 +1239,20 @@ header .mobile-menu::after{
     padding-block: 50px;
 }
 
+.doctor-section .container {
+    flex-direction: column;
+}
+
+.description {
+    width: 85%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.doctor-title {
+    font-size: 32px;
+}
+
 .doctor-content {
     background-image: url(./Images/webp/doctor-introduction-pc.webp);
     background-position: right bottom;
@@ -1396,4 +1412,102 @@ header .mobile-menu::after{
     .w-965 .br2{
         display: block;
     }
+}
+
+/* ------------------------------user-section --------------------------*/
+.user-section {
+    padding-block: 50px;
+}
+
+.user-title {
+    font-size: 32px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.detail-item-left {
+    width: 500px;
+    height: 100px;
+    text-align: center;
+    background-color: rgb(227, 238, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 20px;
+    transform: translateX(-20px);
+    position: relative;
+    border-radius: 50px;
+    font-size: 20px;
+    padding-left: 37px;
+}
+
+.detail-item-right {
+    width: 500px;
+    height: 100px;
+    margin-block: 20px;
+    text-align: center;
+    background-color: rgb(238, 227, 227);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(20px);
+    border-radius: 50px;
+    font-size: 20px;
+    padding-right: 37px;
+}
+
+.detail-item-left::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 1000px;
+    background-image: url(./Images/1.png);
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-17.5%);
+}
+
+.detail-item-right::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 1000px;
+    background-color: red;
+    top: 0;
+    right: 0;
+    transform: translate(50%,-17.5%);
+}
+
+.user-1::after {
+    background-image: url(./Images/webp/user-1.webp);
+    background-size: cover;
+    background-position: center center;
+}
+
+.user-2::after {
+    background-image: url(./Images/webp/user-2.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.user-3::after {
+    background-image: url(./Images/webp/user-3.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.user-4::after {
+    background-image: url(./Images/webp/user-4.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.user-5::after {
+    background-image: url(./Images/webp/user-5.png);
+    background-size: cover;
+    background-position: center center;
 }
