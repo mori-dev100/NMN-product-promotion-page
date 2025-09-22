@@ -818,10 +818,9 @@ header .mobile-menu::after{
     top: 50%;
     transform: translate(-50%, -50%);
     font-size: 28px;
-    color: rgb(156, 16, 16);
+    color: rgb(131, 17, 17);
     text-align: center;
     line-height: 50px;
-    font-weight: bold;
 }
 
 /* production-section-responsive */
