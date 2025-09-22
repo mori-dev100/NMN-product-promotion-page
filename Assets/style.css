@@ -21,8 +21,9 @@ img {
 }
 
 body {
-    background-color: #fffbf7;
+    background-color: #FBFBFB;
 }
+
 
 a {
     text-decoration: none;
@@ -693,6 +694,7 @@ header .mobile-menu::after{
 .supplements-image {
     width: 50%;
     position: relative;
+    padding-left: 30px;
 }
 
 /* .supplements-image::after {
