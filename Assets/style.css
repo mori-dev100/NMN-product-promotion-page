@@ -443,36 +443,6 @@ header .mobile-menu::after{
 .miyaura-section .container {
     padding-bottom: 30px;
 }
-
-
-
-.miyaura-gallery {
-    display: flex;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 100%; /* container full width */
-  }
-  
-  .gallery-track {
-    display: flex;
-    animation: scroll 60s linear infinite; /* adjust duration for speed */
-  }
-  
-  .gallery-track img {
-    width: 250px;   /* ✅ fixed width */
-    height: auto;
-    margin-right: 20px; /* spacing between images */
-  }
-  
-  /* smooth infinite flow */
-  @keyframes scroll {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-  }
   
 .miyaura-content {
     display: flex;
@@ -490,7 +460,7 @@ header .mobile-menu::after{
 
 .miyaura-photo img {
     padding-block: 35px;
-    width:100%;
+    width:91%;
     height: auto;
 }
 
@@ -500,13 +470,13 @@ header .mobile-menu::after{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 30px;
 }
 
 .miyaura-title {
     text-align: center;
     font-size: 32px;
     /* font-family: sans-serif; */
-    margin-bottom: 20px;
 }
 
 .miyaura-para {
