@@ -583,8 +583,6 @@ header .mobile-menu::after{
 }
 
 .nmn-section .container {
-    padding-top: 50px;
-    padding-bottom: 50px;
     gap: 50px;
 }
 
