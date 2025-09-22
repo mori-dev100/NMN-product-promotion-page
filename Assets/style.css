@@ -45,7 +45,7 @@ a {
 
 /* -------------------------header-part----------------------------- */
 header {
-    background-color: #FBFBFB;
+    background-color: white;
 }
 
 header .container {
@@ -482,7 +482,7 @@ header .mobile-menu::after{
 }
 
 .miyaura-photo {
-    width: 35%;
+    width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -490,12 +490,12 @@ header .mobile-menu::after{
 
 .miyaura-photo img {
     padding-block: 35px;
-    width: 65%;
+    width:100%;
     height: auto;
 }
 
 .miyaura-des {
-    width: 65%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -584,15 +584,26 @@ header .mobile-menu::after{
 
 .nmn-section .container {
     gap: 50px;
+    position: relative;
+}
+
+.nmn-section .container::after {
+    position: absolute;
+    content: '';
+    bottom: -25px;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background-color: #fd6d65;
 }
 
 .nmn-des {
-    width: 50%;
+    width: 60%;
     padding-bottom: 10px;
 }
 
 .nmn-image {
-    width: 50%;
+    width: 40%;
     position: relative;
 }
 
@@ -623,6 +634,7 @@ header .mobile-menu::after{
 .nmn-para {
     font-size: 16px;
     line-height: 35px;
+    padding-bottom: 40px;
 }
 
 .nmn-image-mb {
@@ -685,12 +697,12 @@ header .mobile-menu::after{
 }
 
 .supplements-des {
-    width: 50%;
+    width: 60%;
     padding-bottom: 10px;
 }
 
 .supplements-image {
-    width: 50%;
+    width: 40%;
     position: relative;
     padding-left: 30px;
 }
@@ -720,7 +732,7 @@ header .mobile-menu::after{
 
 .supplements-para {
     font-size: 16px;
-    line-height: 35px;
+    line-height: 40px;
 }
 
 .supplements-image-mb {
@@ -781,112 +793,6 @@ header .mobile-menu::after{
         display: block;
     }
 }
-
-/* -------------------------------------product-section------------------------------ */
-
-.product-section {
-    background-color: #FBFBFB;
-}
-
-
-.product-section .container {
-    flex-direction: column;
-    padding-bottom: 50px;
-}
-
-.production-beauty {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    position: relative;
-}
-.production-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.production-text h2 {
-    font-size: 32px;
-    text-align: center;
-    padding-bottom: 30px;
-}
-
-.production-text p {
-    font-size: 16px;
-    text-align: center;
-    line-height: 35px;
-    width: 75%;
-}
-
-.product-des {
-    position: absolute;
-    left: 49%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 28px;
-    color: rgb(131, 17, 17);
-    text-align: center;
-    line-height: 50px;
-}
-
-/* production-section-responsive */
-
-@media (max-width:1200px) {
-    .production-beauty {
-        width: 95%;
-    }
-}
-@media (max-width:850px) {
-    .production-beauty {
-        margin-top: 0;
-    }
-    .production-beauty p {
-        font-size: 20px;
-    }
-
-    .production-text p{
-        width: 95%;
-    }
-
-    .production-text h2 {
-        font-size: 28px;
-    }
-}
-
-@media (max-width:768px) {
-    .production-beauty p {
-        font-size: 18px;
-    }
-}
-
-@media (max-width:679px) {
-    .production-beauty p {
-        font-size: 16px;
-    }
-}
-
-@media (max-width:631px) {
-    .production-beauty p {
-        font-size: 14px;
-        line-height: 30px;
-    }
-}
-
-@media (max-width:427px) {
-    .production-beauty p {
-        font-size: 13px;
-        line-height: 20px;
-    }
-}
-
-@media (max-width:375px) {
-    .production-beauty p {
-        font-size: 12px;
-    }
-}
-
-
 /* -------------------------------------buy-section ------------------------*/
 
 .buy-section {
@@ -1159,7 +1065,7 @@ header .mobile-menu::after{
 }
 
 .okiniwa-section {
-    padding-block: 50px;
+    /* padding-block: 50px; */
 }
 
 .okiniwa-image {
