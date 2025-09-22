@@ -509,7 +509,7 @@ header .mobile-menu::after{
     } 
 }
 
-@media (max-width:845px) {
+@media (max-width:850px) {
     .miyaura-content {
         flex-direction: column;
         gap: 0;
@@ -591,13 +591,13 @@ header .mobile-menu::after{
 .nmn-title {
     font-size: 32px;
     /* font-family: sans-serif; */
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .nmn-subtitle {
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     line-height: 30px;
 }
 
@@ -631,12 +631,15 @@ header .mobile-menu::after{
 }
 
 
-@media (max-width:845px) {
+@media (max-width:850px) {
     .nmn-section .container {
         flex-direction: column;
         gap: 10px;
         padding-top: 30px;
         padding-bottom: 30px;
+    }
+    .nmn-section .container::after {
+        display: none;
     }
     
     .nmn-des{
@@ -690,13 +693,13 @@ header .mobile-menu::after{
 .supplements-title {
     font-size: 32px;
     /* font-family: sans-serif; */
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .supplements-subtitle {
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     line-height: 30px;
 }
 
@@ -736,7 +739,7 @@ header .mobile-menu::after{
 }
 
 
-@media (max-width:845px) {
+@media (max-width:850px) {
     .supplements-section .container {
         flex-direction: column;
         gap: 10px;
@@ -956,12 +959,12 @@ header .mobile-menu::after{
 .lgc-title  h2{
     font-size: 32px;
     font-weight: bold;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
 }
 
 .lgc-subtitle {
     font-size: 24px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .lgc-para {
