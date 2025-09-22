@@ -440,7 +440,6 @@ header .mobile-menu::after{
 }
 
 .miyaura-section .container {
-    border-bottom: 1px solid rgb(255, 0, 119);
     padding-bottom: 30px;
 }
 
@@ -578,11 +577,14 @@ header .mobile-menu::after{
   
 /* ------------------------------------nmn-section---------------------------- */
 
+.nmn-section {
+    background-color: white;
+}
+
 .nmn-section .container {
     padding-top: 50px;
     padding-bottom: 50px;
     gap: 50px;
-    border-bottom: 1px solid rgb(0, 119, 255);
 }
 
 .nmn-des {
@@ -595,7 +597,7 @@ header .mobile-menu::after{
     position: relative;
 }
 
-.nmn-image::after {
+/* .nmn-image::after {
     position: absolute;
     content: '';
     width: 3px;
@@ -604,7 +606,7 @@ header .mobile-menu::after{
     left: 0;
     z-index: 1;
     background-color: rgb(255, 0, 119);
-}
+} */
 
 .nmn-title {
     font-size: 32px;
