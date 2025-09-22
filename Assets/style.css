@@ -21,7 +21,7 @@ img {
 }
 
 body {
-    background-color: #FBFBFB;
+    /* background-color: #FBFBFB; */
 }
 
 
@@ -241,7 +241,7 @@ header .mobile-menu::after{
     height: 90%;
     position: relative;
     /* background-image: url(./Images/webp/hero-background.webp); */
-    background-image: url(./Images/webp/1.png);
+    background-image: url(./Images/webp/1.webp);
 
     background-size: cover;
     background-position: top left;
@@ -547,11 +547,6 @@ header .mobile-menu::after{
 }
   
 /* ------------------------------------nmn-section---------------------------- */
-
-.nmn-section {
-    background-color: #FBFBFB;
-}
-
 .nmn-section .container {
     gap: 50px;
     position: relative;
@@ -769,8 +764,12 @@ header .mobile-menu::after{
 /* -------------------------------------buy-section ------------------------*/
 
 .buy-section {
-    padding-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     background-color: #FBFBFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -791,7 +790,7 @@ header .mobile-menu::after{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./Images/webp/buy-bg.webp);
+    background-image: url(./Images/buy-bg.jpg);
 }
 
 .buy-image img {
@@ -1134,10 +1133,6 @@ header .mobile-menu::after{
     padding-bottom: 20px;
 }
 
-.doctor-title {
-    font-size: 32px;
-}
-
 .doctor-content {
     background-image: url(./Images/webp/doctor-introduction-pc.webp);
     background-position: right bottom;
@@ -1156,7 +1151,7 @@ header .mobile-menu::after{
 
 .doctor-title {
     font-size: 32px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     text-align: center;
     line-height: 150%;
 }
@@ -1169,7 +1164,7 @@ header .mobile-menu::after{
 
 .doctor-subtitle {
     font-size: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     text-align: center;
     line-height: 170%;
 }
@@ -1347,7 +1342,7 @@ header .mobile-menu::after{
     width: 150px;
     height: 150px;
     border-radius: 1000px;
-    background-image: url(./Images/1.png);
+    background-image: url(./Images/1.webp);
     top: 0;
     left: 0;
     transform: translate(-50%,-17.5%);
@@ -1372,27 +1367,27 @@ header .mobile-menu::after{
 }
 
 .user-2::after {
-    background-image: url(./Images/webp/user-2.png);
+    background-image: url(./Images/webp/user-2.webp);
     background-size: cover;
     background-position: center center;
 }
 
 .user-3::after {
-    background-image: url(./Images/webp/user-3.png);
+    background-image: url(./Images/webp/user-3.webp);
     background-size: cover;
     background-position: center center;
 }
 
 
 .user-4::after {
-    background-image: url(./Images/webp/user-4.png);
+    background-image: url(./Images/webp/user-4.webp);
     background-size: cover;
     background-position: center center;
 }
 
 
 .user-5::after {
-    background-image: url(./Images/webp/user-5.png);
+    background-image: url(./Images/webp/user-5.webp);
     background-size: cover;
     background-position: center center;
 }
