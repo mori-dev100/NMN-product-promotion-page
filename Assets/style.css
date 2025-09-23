@@ -1386,7 +1386,8 @@ header .mobile-menu::after{
 
 /* ------------------------------user-section --------------------------*/
 .user-section {
-    padding-block: 50px;
+    padding-block: 30px;
+    overflow: hidden;
 }
 
 .user-title {
@@ -1399,7 +1400,7 @@ header .mobile-menu::after{
 
 .detail-item-left {
     width: 500px;
-    height: 100px;
+    height: 80px;
     text-align: center;
     background-color: rgb(227, 238, 236);
     display: flex;
@@ -1415,7 +1416,7 @@ header .mobile-menu::after{
 
 .detail-item-right {
     width: 500px;
-    height: 100px;
+    height: 80px;
     margin-block: 20px;
     text-align: center;
     background-color: rgb(238, 227, 227);
@@ -1431,8 +1432,8 @@ header .mobile-menu::after{
 .detail-item-left::after {
     content: '';
     position: absolute;
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     border-radius: 1000px;
     background-image: url(./Images/1.webp);
     top: 0;
@@ -1482,4 +1483,57 @@ header .mobile-menu::after{
     background-image: url(./Images/webp/user-5.webp);
     background-size: cover;
     background-position: center center;
+}
+
+/* user-section_responsive */
+
+@media (max-width : 1200px) {
+    .user-section .container {
+        width: 90%;
+    }
+}
+
+@media (max-width : 711px) {
+    .detail-item-left, .detail-item-right {
+        width: 400px;
+        height: 70px;
+        font-size: 16px;
+    }
+       .detail-item-left::after, .detail-item-right::after {
+        width: 110px;
+        height: 110px;
+    }
+} 
+@media (max-width : 567px) {
+    .detail-item-left, .detail-item-right {
+        width: 300px;
+        height: 50px;
+        font-size: 14px;
+    }
+    
+    .detail-item-left::after, .detail-item-right::after {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (max-width:450px) {
+    .detail-item-left, .detail-item-right {
+        width: 100%;
+        height: 50px;
+        font-size: 12px;
+        margin-block: 10px;
+    }
+
+    .detail-item-left::after {
+        left: 35px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .detail-item-right::after {
+        right: 35px;
+        width: 70px;
+        height: 70px;
+    }
 }
