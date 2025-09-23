@@ -1537,3 +1537,45 @@ header .mobile-menu::after{
         height: 70px;
     }
 }
+
+
+/* ------------------------------------ use-section------------------------------------ */
+.use-section {
+    padding-block: 30px;
+}
+
+.use-section .container{
+    flex-direction: column;
+}
+
+.use-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.use-title h2{
+    font-size: 32px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.use-left, .use-center, .use-right {
+    border-left: 5px solid dodgerblue;
+    font-size: 14px;
+    padding-inline: 10px;
+    line-height: 35px;
+}
+
+.use-left {
+    border-color: dodgerblue;
+}
+
+.use-center {
+    border-color: tomato;
+}
+
+.use-right {
+    border-color: greenyellow;
+}
