@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NMNヴィオテール</title>
     <link rel="stylesheet" href="./Assets/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 <body>
     <header>
@@ -219,28 +221,27 @@
         </section>
         <section class="doctor-section" id="doctor">
             <div class="container">
-                <h2 class="doctor-title">ドクター紹介</h2>
-                <p class="description">
-                        NMNの学術的な解説については、スポーツドクターであり、ヒト幹細胞治療研究で関西でも高い評価を得ている「そばじまクリニック」の傍島先生にご協力いただいております。
-                </p>
-                <div class="doctor-content">
-                    <div class="doctor-image-mb">
-                        <img src="./Assets/Images/webp/doctor-mb.webp" alt="">
+                <div class="first-intro">
+                    <div class="doctor-title">
+                        ドクター紹介
                     </div>
-                    <div class="doctor-content-detail">
-                        <div class="doctor-title w-pc">
-                            再生医療の最前線を探求する幹細胞とNMNの専門家<br>そばじまクリニック 院長 <span>傍島 聰</span> 様  
+                    <div class="doctor-first-des">
+                        NMNの学術的な解説については、スポーツドクターであり、ヒト幹細胞治療研究で関西でも高い評価を得ている<br>「そばじまクリニック」の傍島先生にご協力いただいております。
+                    </div>
+                </div>
+                <div class="doctor-detail">
+                    <div class="doctor-right">
+                        <div class="doctor-office">
+                            <img src="./Assets/Images/webp/doctor-office.png" alt="nmn-doctor-office">
                         </div>
-                        <div class="doctor-title w-965">
-                            再生医療の最前線を探求する幹細胞と<br>NMNの専門家そばじまクリニック 院長 <br class="br2"><span>傍島 聰</span> 様  
+                    </div>
+                    <div class="doctor-left">
+                        <div class="doctor-intro">
+                            再生医療の最前線を探求する幹細胞とNMNの専門家<br>
+                            そばじまクリニック 院長 <span>傍島 聰</span> 様  
                         </div>
-                        <div class="doctor-subtitle">
-                            医療法人再生会そばじまクリニック 院長・理事長<br>
-                            日本再生医療学会認定医<br>
-                            NMN機能性食品開発協会理事
-                        </div>  
-                        <div class="doctor-para">
-                            独自の細胞加工施設（CPC）や研究所を備え、大学医学部や医療機関との共同研究を通じて幹細胞治療やNMN研究の基礎から臨床まで幅広く取り組み、整形外科疾患の再生医療分野で国内外をリードする第一人者であり、脂肪幹細胞研究会代表世話人として学術的にも貢献、日本再生医療学会認定医・日本整形外科学会専門医・日本抗加齢学会専門医の資格を持ち、さらにプロバスケットボール「EVESSA大阪」やJリーグ「FC大阪」のチームドクターとしてスポーツ医学の現場でも活躍している。
+                        <div class="doctor-des">
+                            独自の細胞加工施設と研究所を持ち、大学や医療機関と連携しながら幹細胞治療やNMN研究を基礎から臨床まで幅広く推進。整形外科再生医療の第一人者として学術的にもリードし、日本再生医療学会認定医・整形外科専門医・抗加齢学会専門医の資格を有しています。また、プロバスケットボール「EVESSA大阪」やJリーグ「FC大阪」のチームドクターとして、スポーツ医学の現場でも活躍中です。
                         </div>
                     </div>
                 </div>
@@ -434,7 +435,7 @@
                         </div>
                     </div>
                     <div class="footer-map">
-                        <iframe title="MAP" src="https://www.google.com/maps?q=沖縄県那覇市仲井真379-1&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe title="MAP" src="https://maps.google.com/maps?ll=26.203567,127.707575&amp;z=15&amp;t=m&amp;hl=ja&amp;gl=US&amp;mapclient=embed&amp;q=%E3%80%92902-0074%20%E6%B2%96%E7%B8%84%E7%9C%8C%E9%82%A3%E8%A6%87%E5%B8%82%E4%BB%B2%E4%BA%95%E7%9C%9F%EF%BC%93%EF%BC%97%EF%BC%99%E2%88%92%EF%BC%91%20%E3%83%AC%E3%82%B8%E3%83%87%E3%83%B3%E3%82%B9%E6%96%B0%E5%9E%A3&z=18&t=m&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <nav class="footer-nav">
                         <ul>
