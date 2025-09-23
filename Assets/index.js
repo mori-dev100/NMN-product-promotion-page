@@ -120,20 +120,24 @@
         });
     }
 
-    // Hide header on scroll down, show on scroll up
+    // Hide header on scroll down, show on scroll up (desktop only)
     const headerEl = document.querySelector('header');
     if (headerEl) {
         let lastScrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
         let ticking = false;
         const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
 
+        function isDesktop() {
+            return window.matchMedia && window.matchMedia('(min-width: 1101px)').matches;
+        }
+
         function onScrollDirection() {
             ticking = false;
             const currentY = window.pageYOffset || document.documentElement.scrollTop || 0;
 
-            // Do not hide when mobile menu is open
+            // Do not hide when mobile menu is open, or when not desktop
             const menuOpen = mobileMenuOverlay && mobileMenuOverlay.classList.contains('active');
-            if (menuOpen) {
+            if (menuOpen || !isDesktop()) {
                 headerEl.classList.remove('header-hidden');
                 lastScrollY = currentY;
                 return;
@@ -158,6 +162,15 @@
         }
 
         window.addEventListener('scroll', onScroll, { passive: true });
+
+        // Ensure state is correct on resize breakpoint changes
+        if (window.matchMedia) {
+            const mq = window.matchMedia('(min-width: 1101px)');
+            mq.addEventListener('change', () => {
+                headerEl.classList.remove('header-hidden');
+                lastScrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
+            });
+        }
     }
 });
 
