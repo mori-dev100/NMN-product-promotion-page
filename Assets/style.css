@@ -45,7 +45,7 @@ a {
 
 /* -------------------------header-part----------------------------- */
 header {
-    background-color: white;
+    background-color: rgb(246, 253, 255);
 }
 
 header .container {
@@ -442,6 +442,17 @@ header .mobile-menu::after{
 
 .miyaura-section .container {
     padding-bottom: 30px;
+    position: relative;
+}
+
+.miyaura-section .container::after {
+    position: absolute;
+    content: '';
+    bottom: 25px;
+    left: 0;
+    width: 50%;
+    height: 1px;
+    background-color: #f92222;
 }
   
 .miyaura-content {
@@ -460,7 +471,7 @@ header .mobile-menu::after{
 
 .miyaura-photo img {
     padding-block: 35px;
-    width:91%;
+    width:88%;
     height: auto;
 }
 
@@ -469,19 +480,19 @@ header .mobile-menu::after{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 30px;
 }
 
 .miyaura-title {
-    text-align: center;
+    text-align: left;
     font-size: 32px;
-    /* font-family: sans-serif; */
+    font-family: sans-serif;
 }
 
 .miyaura-para {
     font-size: 16px;
-    line-height: 35px;
+    line-height: 32px;
 }
 
 /* miyaura-section_responsive */
@@ -515,12 +526,17 @@ header .mobile-menu::after{
         gap: 0;
     }
 
+    .miyaura-section .container::after {
+        display: none;
+    }
+
     .miyaura-photo {
         width: 100%;
     }
 
     .miyaura-des {
         width: 100%;
+        align-items: center;
     }
 
     .miyaura-photo img {
@@ -534,6 +550,7 @@ header .mobile-menu::after{
 
     .miyaura-title {
         width: 100%;
+        text-align: center;
     }
 }
 
@@ -555,11 +572,11 @@ header .mobile-menu::after{
 .nmn-section .container::after {
     position: absolute;
     content: '';
-    bottom: -25px;
+    bottom: -40px;
     left: 0;
     width: 50%;
-    height: 2px;
-    background-color: #fd6d65;
+    height: 1px;
+    background-color: #2280f9;
 }
 
 .nmn-des {
@@ -585,8 +602,9 @@ header .mobile-menu::after{
 
 .nmn-title {
     font-size: 32px;
-    /* font-family: sans-serif; */
+    font-family: sans-serif;
     margin-bottom: 15px;
+    font-weight: bold;
 }
 
 .nmn-subtitle {
@@ -598,12 +616,16 @@ header .mobile-menu::after{
 
 .nmn-para {
     font-size: 16px;
-    line-height: 35px;
+    line-height: 32px;
     padding-bottom: 40px;
 }
 
 .nmn-image-mb {
     display: none;
+}
+
+.effect-nmn {
+    width: 90%;
 }
 
 /* nmn-section_responsive */
@@ -687,7 +709,7 @@ header .mobile-menu::after{
 
 .supplements-title {
     font-size: 32px;
-    /* font-family: sans-serif; */
+    font-family: sans-serif;
     margin-bottom: 15px;
 }
 
@@ -700,14 +722,14 @@ header .mobile-menu::after{
 
 .supplements-para {
     font-size: 16px;
-    line-height: 40px;
+    line-height: 32px;
 }
 
 .supplements-image-mb {
     display: none;
 }
 
-/* nmn-section_responsive */
+/* supplement-section_responsive */
 
 @media (max-width:1200px) {
     .supplements-section .container {
@@ -764,9 +786,9 @@ header .mobile-menu::after{
 /* -------------------------------------buy-section ------------------------*/
 
 .buy-section {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    background-color: #FBFBFB;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f4fffb;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -783,6 +805,7 @@ header .mobile-menu::after{
     box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     position: relative;
+    background-color: white;
 }
 
 .buy-image {
@@ -958,6 +981,7 @@ header .mobile-menu::after{
 .lgc-title  h2{
     font-size: 32px;
     font-weight: bold;
+    font-family: sans-serif;
     padding-bottom: 15px;
 }
 
@@ -1058,6 +1082,7 @@ header .mobile-menu::after{
     text-align: center;
     margin-bottom: 30px;
     font-weight: bold;
+    font-family: sans-serif;
 }
 
 .okiniwa-des {
@@ -1154,6 +1179,7 @@ header .mobile-menu::after{
     padding-bottom: 15px;
     text-align: center;
     line-height: 150%;
+    font-family: sans-serif;
 }
 
 .doctor-title span {
@@ -1303,6 +1329,8 @@ header .mobile-menu::after{
     font-size: 32px;
     text-align: center;
     padding-bottom: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
 .detail-item-left {
