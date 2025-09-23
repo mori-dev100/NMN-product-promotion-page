@@ -119,6 +119,46 @@
             });
         });
     }
+
+    // Hide header on scroll down, show on scroll up
+    const headerEl = document.querySelector('header');
+    if (headerEl) {
+        let lastScrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
+        let ticking = false;
+        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+
+        function onScrollDirection() {
+            ticking = false;
+            const currentY = window.pageYOffset || document.documentElement.scrollTop || 0;
+
+            // Do not hide when mobile menu is open
+            const menuOpen = mobileMenuOverlay && mobileMenuOverlay.classList.contains('active');
+            if (menuOpen) {
+                headerEl.classList.remove('header-hidden');
+                lastScrollY = currentY;
+                return;
+            }
+
+            const isScrollingDown = currentY > lastScrollY + 5; // small threshold
+            const isScrollingUp = currentY < lastScrollY - 5;
+
+            if (isScrollingDown && currentY > 50) {
+                headerEl.classList.add('header-hidden');
+            } else if (isScrollingUp) {
+                headerEl.classList.remove('header-hidden');
+            }
+
+            lastScrollY = currentY;
+        }
+
+        function onScroll() {
+            if (ticking) return;
+            ticking = true;
+            requestAnimationFrame(onScrollDirection);
+        }
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+    }
 });
 
 

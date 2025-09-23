@@ -73,7 +73,15 @@ a {
 
 /* -------------------------header-part----------------------------- */
 header {
-    background-color: rgb(246, 253, 255);
+    background-color: rgb(252, 252, 252, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 900;
+    transition: transform 0.25s ease-in-out;
+}
+
+.header-hidden {
+    transform: translateY(-100%);
 }
 
 header .container {
@@ -1439,7 +1447,7 @@ header .mobile-menu::after{
     transform: translateX(-20px);
     position: relative;
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 16px;
     padding-left: 37px;
 }
 
@@ -1454,7 +1462,7 @@ header .mobile-menu::after{
     align-items: center;
     transform: translateX(20px);
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 16px;
     padding-right: 37px;
 }
 
