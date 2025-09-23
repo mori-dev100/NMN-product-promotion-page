@@ -826,7 +826,7 @@ header .mobile-menu::after{
 
 /* ---------------------product-section----------------------- */
 .product-section {
-    background-image: url(./Images/webp/sea.jpg);
+    background-image: url(./Images/webp/sea.webp);
     background-size: cover;
     background-position: bottom center;
     padding-block: 50px;
@@ -917,7 +917,7 @@ header .mobile-menu::after{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./Images/buy-bg.jpg);
+    background-image: url(./Images/buy-bg.webp);
 }
 
 .buy-image img {
@@ -1209,7 +1209,7 @@ header .mobile-menu::after{
     height: 300px;
     bottom: -35px;
     left: 0;
-    background-image: url(./Images/webp/okiniwa.jpg);
+    background-image: url(./Images/webp/okiniwa.webp);
     background-size: cover;
     opacity: 0.8;
     background-position: center center;
