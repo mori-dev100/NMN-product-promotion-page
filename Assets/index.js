@@ -89,6 +89,36 @@
             mobileMQ.addEventListener('change', handleChange);
         }
     }
+
+    // FAQ accordion toggle
+    const faqItems = document.querySelectorAll('.faq-item');
+    if (faqItems.length) {
+        faqItems.forEach((item, idx) => {
+            const button = item.querySelector('.faq-question');
+            const panel = item.querySelector('.faq-answer');
+            if (!button || !panel) return;
+
+            button.addEventListener('click', () => {
+                const isOpen = item.classList.contains('open');
+
+                // Close all
+                faqItems.forEach(i => {
+                    i.classList.remove('open');
+                    const btn = i.querySelector('.faq-question');
+                    const pnl = i.querySelector('.faq-answer');
+                    if (btn) btn.setAttribute('aria-expanded', 'false');
+                    if (pnl) pnl.style.maxHeight = null;
+                });
+
+                // Open selected if it was closed
+                if (!isOpen) {
+                    item.classList.add('open');
+                    button.setAttribute('aria-expanded', 'true');
+                    panel.style.maxHeight = panel.scrollHeight + 'px';
+                }
+            });
+        });
+    }
 });
 
 

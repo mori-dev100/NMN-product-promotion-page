@@ -1,4 +1,32 @@
-﻿* {
+﻿html {
+    scroll-behavior: smooth;
+}
+
+#top,
+#miyaura,
+#nmn,
+#product,
+#doctor,
+#support,
+#faq,
+#contact {
+    scroll-margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+    #top,
+    #miyaura,
+    #nmn,
+    #product,
+    #doctor,
+    #support,
+    #faq,
+    #contact {
+        scroll-margin-top: 70px;
+    }
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -654,6 +682,7 @@ header .mobile-menu::after{
         gap: 10px;
         padding-top: 30px;
         padding-bottom: 30px;
+        padding-top: 0;
     }
     .nmn-section .container::after {
         display: none;
@@ -1535,5 +1564,314 @@ header .mobile-menu::after{
         right: 35px;
         width: 70px;
         height: 70px;
+    }
+}
+
+
+/* ------------------------------------ use-section------------------------------------ */
+.use-section {
+    padding-block: 30px;
+}
+
+.use-section .container{
+    flex-direction: column;
+}
+
+.use-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.use-title h2{
+    font-size: 32px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.use-left, .use-center, .use-right {
+    border-left: 5px solid dodgerblue;
+    font-size: 14px;
+    padding-inline: 10px;
+    line-height: 35px;
+}
+
+.use-left {
+    border-color: dodgerblue;
+}
+
+.use-center {
+    border-color: tomato;
+}
+
+.use-right {
+    border-color: greenyellow;
+}
+
+/* use-section_resposive */
+@media (max-width : 1200px) {
+    .use-section .br {
+        display: block;
+    }
+}
+
+@media (max-width : 850px) {
+    .use-section .br {
+        display: none;
+    }
+
+    .use-content {
+        flex-direction: column;
+    }
+
+    .use-left, .use-right, .use-center {
+        font-size: 12px;
+    }
+}
+
+
+/* ------------------------------------ faq-section ------------------------------------ */
+.faq-section {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.faq-section .container {
+    flex-direction: column;
+}
+
+.faq-wrapper {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-title {
+    font-size: 32px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-list {
+    list-style: none;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-item + .faq-item {
+    margin-top: 12px;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 16px 20px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.faq-question:hover {
+    cursor: pointer;
+    background: #f9f9f9;
+}
+
+.faq-icon {
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+    background: #fff;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 0 0 10px 10px;
+}
+
+.faq-answer p {
+    padding: 0 20px 16px 20px;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.faq-item.open .faq-answer {
+    max-height: 500px; /* sufficient for typical answers */
+}
+
+.faq-item.open .faq-question {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.faq-item.open .faq-icon {
+    transform: rotate(45deg); /* turn + to × */
+}
+
+@media (max-width: 1200px) {
+    .faq-section .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    .faq-title {
+        font-size: 24px;
+    }
+    .faq-question {
+        font-size: 14px;
+        padding: 14px 16px;
+    }
+    .faq-answer p {
+        font-size: 13px;
+    }
+}
+
+/* ------------------------------------ contact-section ------------------------------------ */
+.contact-section {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.contact-section .container {
+    flex-direction: column;
+}
+
+.contact-wrapper {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px 16px 26px;
+}
+
+.contact-title {
+    font-size: 28px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.form-group label {
+    font-size: 14px;
+}
+
+.required {
+    color: #e53935;
+    font-size: 12px;
+    margin-left: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 10px 12px;
+    font-size: 14px;
+    background: #fff;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #bdbdbd;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.contact-submit {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 24px;
+    padding: 10px 18px;
+    font-size: 14px;
+}
+
+.contact-submit:hover {
+    cursor: pointer;
+    background: #f9f9f9;
+}
+
+.submit-dot {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: #d14b5a;
+    border-radius: 999px;
+}
+
+@media (max-width: 1200px) {
+    .contact-section .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    .contact-title {
+        font-size: 24px;
+    }
+}
+
+/* ------------------------------------ desktop alignment >=850px ------------------------------------ */
+@media (min-width: 850px) {
+    .container {
+        width: 90%;
+    }
+
+    .miyaura-content,
+    .lgc-content,
+    .nmn-section .container,
+    .supplements-section .container,
+    .product-section .container {
+        align-items: center;
+    }
+
+    .user-section .container,
+    .use-section .container,
+    .faq-section .container,
+    .contact-section .container {
+        width: 70%;
+    }
+
+    .faq-wrapper,
+    .contact-wrapper {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
