@@ -783,12 +783,76 @@ header .mobile-menu::after{
         display: block;
     }
 }
+
+/* ---------------------product-section----------------------- */
+.product-section {
+    background-image: url(./Images/webp/sea.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    padding-block: 50px;
+}
+
+.product-section .container {
+    gap: 50px;
+}
+
+.product-title {
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.product-para {
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.product-des {
+    width: 70%;
+}
+
+.product-image {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image img {
+    width: 70%;
+}
+
+/* product-image_responsive */
+
+@media (max-width : 1200px) {
+    .product-section .container {
+        width: 90%;
+    }
+}
+
+@media (max-width : 850px) {
+    .product-section .container {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .product-des {
+        width: 100%;
+        text-align: center;
+    }
+
+    .product-image {
+        width: 75%;
+    }
+}
+
+
 /* -------------------------------------buy-section ------------------------*/
 
 .buy-section {
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: #f4fffb;
     display: flex;
     justify-content: center;
     align-items: center;

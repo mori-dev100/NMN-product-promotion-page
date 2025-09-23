@@ -26,6 +26,69 @@
     closebtn.addEventListener('click', function(){
         mobileMenuOverlay.classList.remove('active');
     })
+
+    // Parallax effect for product-section background
+    const productSection = document.querySelector('.product-section');
+    if (productSection) {
+        const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const isMobile = window.matchMedia && window.matchMedia('(max-width: 850px)').matches;
+        const speed = 0.35; // lower = slower background movement
+        let ticking = false;
+
+        function updateParallax() {
+            ticking = false;
+            const rect = productSection.getBoundingClientRect();
+            const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+
+            // Only adjust when section is in or near viewport
+            if (rect.bottom >= -50 && rect.top <= viewportHeight + 50) {
+                const scrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
+                const offsetTop = scrollY + rect.top; // absolute page Y for section's top
+                const delta = scrollY - offsetTop; // how far we've scrolled past the section top
+                const bgY = Math.round(delta * speed);
+                productSection.style.backgroundPosition = `center ${bgY}px`;
+            }
+        }
+
+        function onScroll() {
+            if (ticking) return;
+            ticking = true;
+            requestAnimationFrame(updateParallax);
+        }
+
+        function enableParallax() {
+            // Initialize once on load and on resize breakpoint changes
+            updateParallax();
+            window.addEventListener('scroll', onScroll, { passive: true });
+        }
+
+        function disableParallax() {
+            window.removeEventListener('scroll', onScroll, { passive: true });
+            productSection.style.backgroundPosition = 'center center';
+        }
+
+        // Respect reduced motion and small screens
+        if (!reduceMotion && !isMobile) {
+            enableParallax();
+        }
+
+        // Listen for preference or viewport changes
+        if (window.matchMedia) {
+            const motionMQ = window.matchMedia('(prefers-reduced-motion: reduce)');
+            const mobileMQ = window.matchMedia('(max-width: 850px)');
+
+            function handleChange() {
+                if (motionMQ.matches || mobileMQ.matches) {
+                    disableParallax();
+                } else {
+                    enableParallax();
+                }
+            }
+
+            motionMQ.addEventListener('change', handleChange);
+            mobileMQ.addEventListener('change', handleChange);
+        }
+    }
 });
 
 
