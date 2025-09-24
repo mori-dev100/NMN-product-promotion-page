@@ -917,7 +917,7 @@ header .mobile-menu::after{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./Images/buy-bg.webp);
+    background-image: url(./Images/webp/buy-bg-small.webp);
 }
 
 .buy-image img {
@@ -1329,6 +1329,7 @@ header .mobile-menu::after{
 
 .doctor-des {
     line-height: 35px;
+    text-align: center;
 }
 
 .doctor-intro {
@@ -1336,6 +1337,7 @@ header .mobile-menu::after{
     padding-bottom: 15px;
     font-size: 20px;
     line-height: 35px;
+    text-align: center;
 }
 
 .doctor-intro span {
