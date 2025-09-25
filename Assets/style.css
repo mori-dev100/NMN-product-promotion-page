@@ -50,7 +50,6 @@ img {
 }
 
 body {
-    /* background-color: #FBFBFB; */
     overflow-x: hidden;
 }
 
@@ -1298,8 +1297,8 @@ header .mobile-menu::after{
     gap: 50px;
 }
 
-.doctor-image {
-    width: 40%;
+.doctor-office {
+
 }
 
 .doctor-right {
