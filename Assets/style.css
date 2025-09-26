@@ -799,7 +799,8 @@ header .mobile-menu::after{
     .supplements-section .container {
         flex-direction: column;
         gap: 10px;
-        padding-block: 30px;
+        padding-top: 0;
+        padding-bottom: 30px;
     }
     
     .supplements-des{
@@ -1295,6 +1296,7 @@ header .mobile-menu::after{
     width: 100%;
     display: flex;
     gap: 50px;
+    align-items: center;
 }
 
 .doctor-office {
@@ -1348,6 +1350,35 @@ header .mobile-menu::after{
 .doctor-right {
     display: flex;
 }
+
+/* doctor-section-responsevie */
+
+@media (max-width:1200px) {
+    .doctor-section .container {
+        width: 90%;
+    }
+}
+
+@media (max-width : 850px) {
+    .doctor-detail {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .doctor-section {
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
+
+    .doctor-right, .doctor-left {
+        width: 100%;
+    }
+
+    .first-intro {
+        padding-bottom: 0;
+    }
+}
+
 /* ------------------------------user-section --------------------------*/
 .user-section {
     padding-block: 30px;
@@ -1457,6 +1488,13 @@ header .mobile-menu::after{
     }
 }
 
+@media (max-width : 850px) {
+    .user-section {
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
+}
+
 @media (max-width : 711px) {
     .detail-item-left, .detail-item-right {
         width: 400px;
@@ -1554,6 +1592,11 @@ header .mobile-menu::after{
 @media (max-width : 850px) {
     .use-section .br {
         display: none;
+    }
+
+    .use-section {
+        padding-top: 0;
+        padding-bottom: 30px;
     }
 
     .use-content {
@@ -1658,6 +1701,13 @@ header .mobile-menu::after{
 @media (max-width: 1200px) {
     .faq-section .container {
         width: 90%;
+    }
+}
+
+@media (max-width : 850px) {
+    .faq-section {
+        padding-top: 0;
+        padding-bottom: 30px;
     }
 }
 
@@ -1774,6 +1824,13 @@ header .mobile-menu::after{
 @media (max-width: 1200px) {
     .contact-section .container {
         width: 90%;
+    }
+}
+
+@media (max-width : 850px) {
+    .contact-section {
+        padding-top : 0;
+        padding-bottom: 30px;
     }
 }
 
